@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+<!--    <type name="Magento\Cms\Model\ResourceModel\Block">-->
+<!--        <plugin name="suson_country_wise_cms_block_overwrite" type="Suson\CountryWiseCms\Plugin\ResourceModel\Block"/>-->
+<!--    </type>-->
+<!--    _getLoadSelect function-->
+<!--    ->join(-->
+<!--    ['cbc' => $this->getTable('cms_block_country')],-->
+<!--    $this->getMainTable() . '.block_id = cbc.block_id',-->
+<!--    ['country_id']-->
+<!--    )-->
+<!--    Todo: add country iso code here -->
+<!--    ->where('cbc.country_id in (?)', [\Suson\CountryWiseCms\Model\Ui\Source\Countries::DEFAULT])-->
+<!--    ->order('country_id DESC');-->
+</config>

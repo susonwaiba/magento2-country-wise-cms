@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="countryWiseCms" class="Suson\CountryWiseCms\Ui\Component\Form\Fieldset\CountryWiseCmsForPage" sortOrder="31">
+        <settings>
+            <collapsible>true</collapsible>
+            <label translate="true">Page in Countries</label>
+        </settings>
+        <field name="countries" formElement="multiselect">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">page</item>
+                    <item name="default" xsi:type="string">0</item>
+                </item>
+            </argument>
+            <settings>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">true</rule>
+                </validation>
+                <dataType>var</dataType>
+                <label translate="true">Countries</label>
+                <dataScope>countries</dataScope>
+            </settings>
+            <formElements>
+                <multiselect>
+                    <settings>
+                        <options class="Suson\CountryWiseCms\Model\Ui\Source\Countries"/>
+                    </settings>
+                </multiselect>
+            </formElements>
+        </field>
+    </fieldset>
+</form>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="cms_page_save_after">
+        <observer name="suson_country_wise_cms_page_save" instance="Suson\CountryWiseCms\Observer\PageSaveObserver"/>
+    </event>
+    <event name="cms_page_load_after">
+        <observer name="suson_country_wise_cms_page_load" instance="Suson\CountryWiseCms\Observer\PageLoadObserver"/>
+    </event>
+    <event name="cms_page_catalogrule_collection_load_before">
+        <observer name="suson_country_wise_cms_page_catalogrule_collection_load" instance="Suson\CountryWiseCms\Observer\PageCollectionFilterObserver"/>
+    </event>
+    <event name="cms_page_salesrule_collection_load_before">
+        <observer name="suson_country_wise_cms_page_salerule_collection_load" instance="Suson\CountryWiseCms\Observer\PageCollectionFilterObserver"/>
+    </event>
+    <event name="cms_page_collection_load_after">
+        <observer name="suson_country_wise_cms_page_collection_load" instance="Suson\CountryWiseCms\Observer\DataProviderLoadObserver"/>
+    </event>
+</config>

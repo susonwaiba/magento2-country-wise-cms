@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <country_wise_cms>
+            <general>
+                <enable>1</enable>
+                <enable_in_page>1</enable_in_page>
+                <enable_in_block>1</enable_in_block>
+            </general>
+        </country_wise_cms>
+    </default>
+</config>

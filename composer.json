@@ -1,0 +1,16 @@
+{
+  "name": "suson/magento2-country-wise-cms",
+  "description": "Country Wise Cms",
+  "type": "magento2-module",
+  "require": {
+    "magento/module-cms": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Suson\\CountryWiseCms\\": ""
+    },
+    "files": [
+      "registration.php"
+    ]
+  }
+}
