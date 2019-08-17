@@ -1,4 +1,4 @@
-# Suson_CountryWiseCms
+# Country Wise Cms
 
 This module is intended to extend default magento functionality for CMS static block and page.
 
